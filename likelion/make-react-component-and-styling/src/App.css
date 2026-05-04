@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Playfair+Display:wght@600&display=swap');
+
+:root {
+  --color-bg: #fafaf8;
+  --color-surface: #ffffff;
+  --color-border: #e8e4de;
+  --color-text: #1a1a1a;
+  --color-text-muted: #888880;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+  --color-tag: #f0ede8;
+  --font-sans: 'Noto Sans KR', sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  --transition: 0.2s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 24px 60px;
+}
